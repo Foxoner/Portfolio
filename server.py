@@ -37,8 +37,8 @@ def submit_form():
             with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
                 smtp.ehlo()
                 smtp.starttls()
-                smtp.login('vadim.avercon@gmail.com', '452263632')
-                smtp.sendmail('vadim.avercon@gmail.com','vadim.avercon@gmail.com', msg)
+                smtp.login('vtestingroom@gmail.com', 'Testing888password')
+                smtp.sendmail('vtestingroom@gmail.com','vadim.avercon@gmail.com', msg)
                 smtp.quit()
             # End Email
             print(data)
